@@ -3,7 +3,7 @@ package com.nds.test;
 public class VerifyPublication {
 	public boolean ValidateFields(String Pid, String Pname, String price, String stock) {
 
-		return (Pid.equals("") || Pname.equals("") || price.equals("") || stock.equals("") ? true : false);
+		return (Pid.equals("") || Pname.equals("") || "".equals(price) || stock.equals("") ? true : false);
 
 	}
 

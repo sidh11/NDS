@@ -3,7 +3,7 @@ package com.nds.test;
 public class SubscriptionValidate {
 
 	public boolean ValSubfields(String sub_id, String cus_id, String pub_id, String desc) {
-		return (sub_id.equals("") || cus_id.equals("") || pub_id.equals("") || desc.equals("") ? true : false);
+		return (sub_id.equals("") || cus_id.equals("") || "".equals(pub_id) || desc.equals("") ? true : false);
 	}
 
 	public boolean Validatesub(String sid) {
